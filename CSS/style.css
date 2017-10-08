@@ -1,4 +1,11 @@
 
+body {
+  background-color: gold;
+  text-align: center;
+  font-size: 45px;
+  font-family: serif;
+  color: black;
+  }
 .arti{
   width:300px;
   height: auto;
@@ -30,14 +37,7 @@
 .slideContainer{
   float: left;
 }
-}
-body {
-  background-color: gold;
-  text-align: center;
-  font-size: 45px;
-  font-family: serif;
-  color: black;
-  }
+
 p2 {
   color: red;
   font-family: sans-serif;
