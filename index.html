@@ -3,14 +3,63 @@
 <head>
   <meata char ="Utf-8">
     <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <script src="JS/sketch.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"
   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
   crossorigin="anonymous"></script>
-
+    <script src="JS/sketch.js"></script>
       <title> "Nutrition" </title>
 
   </head>
   <body>
+<div class = "slideContainer">
+    <div class = "slideshow">
+      <div class = "mySlides">
+    <img class = "arti" src = "img/arti.jpg" alt= "an artichoke"/>
+  </div>
+  <div class = "mySlides">
+    <img class = "chicken" src = "img/chicken.jpg"/>
+  </div>
+  <div class = "mySlides">
+    <img class = "oyster" src = "img/oyster.jpg"/>
+  </div>
+  <div class = "mySlides">
+    <img class = "pizza" src = "img/pizza.jpg"/>
+  </div>
+  <div class = "mySlides">
+    <img class = "raw" src = "img/raw.jpg"/>
+  </div>
+  <div class = "mySlides">
+    <img class = "shrimp" src = "img/shrimp.jpg"/>
+  </div>
+  <div class = "mySlides">
+    <img class = "smoothie" src = "img/smoothie.jpg"/>
+  </div>
+    </div>
+  </div>
+    <script>
+    var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = $(".mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 5000); // Change image every 2 seconds
+}
+</script>
+<div class = "topnav" id = "myTopNav">
+  <a href = "#food">Food</a>
+</div>
+<p1>The Best Nutrition App for <b>YOUR</b> Needs</p1><br></br>
+<p2><b>Intermittent Fasting Timer</b> to track your progress</p2><br></br>
+<p3><b>Nutritrion Alerts</b> to better achieve your goals</p3><br></br>
+<p4>We're in this together.</p4><br></br>
+<plast>This app is powered by:  <button>http://www.nutritionix.com/api</button></plast>
+
   </body>
   </html>
